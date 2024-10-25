@@ -89,9 +89,6 @@ jobs:
         modules: qtcharts
     - name: Download TIPL and Atlases
       run: |
-        git clone https://github.com/frankyeh/TIPL.git
-        git clone https://github.com/frankyeh/data-atlas.git
-        git clone https://github.com/frankyeh/UNet-Studio-Data.git
         rm -fr data-atlas/.git
     - name: Build DSI Studio
       run: |
