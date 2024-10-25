@@ -1,0 +1,10 @@
+^U:\DSI-STUDIO-MASTER\TIPL\BUILD\CMAKEFILES\F76DAFE83282EDA0C0C265009EF4047C\GENERATE.STAMP.RULE
+setlocal
+E:\Tools\CMake\bin\cmake.exe -SU:/DSI-Studio-master/TIPL -BU:/DSI-Studio-master/TIPL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file U:/DSI-Studio-master/TIPL/build/TIPL.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,9 @@
+preifx=C:/Program Files/TIPL
+exec_prefix=${prefix}
+includedir=${prefix}
+
+Name: TIPL
+Description: Template image processing library
+Version: 0
+Libs: -lsvm
+Cflags: -I${includedir}
