@@ -23,8 +23,6 @@ extraction:
         - zlib1g-dev
     configure:
       command:
-        - git clone https://github.com/frankyeh/TIPL.git
-        - mv TIPL tipl
         - qmake dsi_studio.pro
     index:
       build_command:
